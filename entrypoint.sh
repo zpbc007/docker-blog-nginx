@@ -11,7 +11,7 @@ touch /etc/nginx/logs/error.log
 mkdir -p /apps/blog/
 
 # move static
-mv ./dist/* /apps/blog/
+mv ./public/* /apps/blog/
 
 # start nginx
 nginx -g "daemon off;"
