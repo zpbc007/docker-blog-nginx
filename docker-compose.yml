@@ -1,0 +1,13 @@
+version: '2.4'
+services:
+  nginx-proxy:
+    image: my-nginx
+    volumes_from:
+      - container:${container_id}
+    ports:
+      - "80:80"
+    networks:
+      - proxy-net
+networks:
+  proxy-net: 
+    driver: bridge
