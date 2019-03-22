@@ -9,4 +9,6 @@ RUN groupadd -r www && useradd -r -g www www
 # change to code dir
 WORKDIR ${root_dir}
 
+COPY . .
+
 ENTRYPOINT ["./entrypoint.sh"]
