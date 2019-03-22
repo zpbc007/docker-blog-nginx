@@ -13,5 +13,8 @@ mkdir -p /apps/blog/
 # move static
 mv ./public/* /apps/blog/
 
+# move certificate
+mv ./zpblog.xyz/* /etc/nginx/ssl/zpblog.xyz
+
 # start nginx
 nginx -g "daemon off;"
