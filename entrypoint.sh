@@ -14,6 +14,7 @@ mkdir -p /apps/blog/
 mv ./public/* /apps/blog/
 
 # move certificate
+mkdir -p /etc/nginx/ssl/zpblog.xyz
 mv ./zpblog.xyz/* /etc/nginx/ssl/zpblog.xyz
 
 # start nginx
